@@ -65,146 +65,21 @@ g++ main.cpp -o market
 Run
 ./market
 
-#🧩 5. Diagrams 
 
-## 5.1 Use Case Diagram
-
-
-usecaseDiagram
-actor Admin
-actor Buyer
-
-Admin --> (Add Product)
-Admin --> (Edit Product)
-Admin --> (Delete Product)
-
-Buyer --> (Buy Product)
-Buyer --> (Refund Product)
-Buyer --> (Become Premium Member)
-Buyer --> (View Receipt)
-
-##5.2 Level-0 Data Flow Diagram (DFD)
-
-➡ Place under DFD Level-0 heading
-
-flowchart LR
-User -->|Buys/Refunds| System
-Admin -->|Manage Products| System
-System -->|Store Data| Database[(Files)]
-System -->|Generate Receipt| User
-
-##5.3 Level-1 DFD
-
-➡ Place under Level-1 DFD heading
-
-flowchart LR
-A[Admin] --> B[Product Management]
-B --> DB[(database.txt)]
-
-C[Buyer] --> D[Purchase Module]
-C --> E[Refund Module]
-D --> T[(transactions.txt)]
-E --> T[(transactions.txt)]
-
-C --> F[Premium Membership Module]
-F --> U[(users.txt)]
-
-##5.4 Class Diagram
-
-➡ Place under Class Diagram heading
-
-classDiagram
-class shopping {
-    -int pcode
-    -float price
-    -float dis
-    -string pname
-    -bool isPremiumMember
-    +menu()
-    +administrator()
-    +buyer()
-    +add()
-    +edit()
-    +rem()
-    +list()
-    +receipt()
-    +refund()
-    +addUserDetails()
-    +becomePremiumMember()
-    +saveTransaction()
-}
-
-##5.5 Sequence Diagram (Buying a Product)
-
-➡ Place here under Sequence Diagram heading
-
-sequenceDiagram
-participant Buyer
-participant System
-participant Database
-
-Buyer->>System: Select Buy
-System->>Database: Fetch product list
-Database-->>System: Return products
-Buyer->>System: Enter product code & qty
-System->>Database: Calculate amount & discounts
-System->>Buyer: Show receipt
-System->>Database: Save transaction
-
-##5.6 Entity Relationship Diagram (ERD)
-
-➡ Place under ER Diagram heading
-
-erDiagram
-    USER {
-        string name
-        string email
-        string phone
-        bool premium
-    }
-
-    PRODUCT {
-        int pcode
-        string pname
-        float price
-        float discount
-    }
-
-    TRANSACTION {
-        int tid
-        int pcode
-        int quantity
-        float total
-        string type
-    }
-
-    USER ||--o{ TRANSACTION : "makes"
-    PRODUCT ||--o{ TRANSACTION : "included in"
 
 #📝 6. Conclusion
 
 This project is a complete file-based C++ supermarket billing system featuring:
-
 Product management
-
 Real billing
-
 Refund system
-
 User & membership storage
-
 Transaction logs
-
 Clean console UI
-
 You can expand it using:
-
 OOP classes
-
 STL (vectors/maps)
-
 GUI (Qt / Tk / Web)
-
 Database (MySQL / SQLite)
 
 
