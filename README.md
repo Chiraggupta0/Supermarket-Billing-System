@@ -58,7 +58,7 @@ Supermarket-Billing-System/
 ## ⚙️ 4. How to Run
 
 ### **Compile**
-```bash
+bash
 g++ main.cpp -o market
 
 
