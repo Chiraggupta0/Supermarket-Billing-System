@@ -1,0 +1,35 @@
+
+Transaction Type: Purchase
+Customer Name: harsh
+Customer Contact: 789
+Products Purchased:
+Product Code: 3, Quantity: 5
+Product Code: 5, Quantity: 7
+Total Amount: 577.6
+
+
+Transaction Type: Refund
+Customer Name: harsh
+Customer Contact: 789
+Products Returned:
+Product Code: 3, Quantity: 2
+Product Code: 5, Quantity: 2
+Total Amount: 228
+
+
+Transaction Type: Purchase
+Customer Name: harsh
+Customer Contact: 1234567890
+Products Purchased:
+Product Code: 8, Quantity: 5
+Product Code: 1, Quantity: 5
+Total Amount: 902.5
+
+
+Transaction Type: Refund
+Customer Name: harsh
+Customer Contact: 234567890
+Products Returned:
+Product Code: 8, Quantity: 2
+Total Amount: 285
+
