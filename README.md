@@ -56,17 +56,17 @@ Supermarket-Billing-System/
 ## 📝 4. Conclusion
 
 This project is a complete file-based C++ supermarket billing system featuring:
-Product management
-Real billing
-Refund system
-User & membership storage
-Transaction logs
-Clean console UI
+Product management,
+Real billing,
+Refund system,
+User & membership storage,
+Transaction logs,
+Clean console UI,
 You can expand it using:
-OOP classes
-STL (vectors/maps)
-GUI (Qt / Tk / Web)
-Database (MySQL / SQLite)
+OOP classes,
+STL (vectors/maps),
+GUI (Qt / Tk / Web),
+Database (MySQL / SQLite).
 
 
 
