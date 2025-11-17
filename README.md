@@ -53,21 +53,7 @@ Supermarket-Billing-System/
 ├── README.md
 
 
----
-
-## ⚙️ 4. How to Run
-
-### **Compile**
-bash
-g++ main.cpp -o market
-
-
-Run
-./market
-
-
-
-#📝 6. Conclusion
+## 📝 4. Conclusion
 
 This project is a complete file-based C++ supermarket billing system featuring:
 Product management
